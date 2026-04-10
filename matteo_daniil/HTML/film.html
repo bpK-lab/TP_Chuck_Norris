@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<title> Accueil </title>
-		<link rel ="stylesheet" href="../css/style.css"/>
-		<script src="script.js" async></script>
-	</head>
-	<body style="background-color:rgb(255, 158, 46);">
-		<h1 class="titre"> Film connu au quels Chuck Norris a participé </h1>
-        <h2 class = "center">
-        <br></br>
-			<br>La Fureur du dragon</br>
-            <img src="../img/dragon.jpg">
-			<br>Invasion USA</br>
-            <img src="../img/usa.jpg" height="500">
-			<br>Delta Force</br>
-            <img src="../img/delta.jpg" height="500">
-			<br>Sale temps pour un flic</br>
-            <img src="../img/souffrance.webp" height="500">
-			</h2>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <title> Accueil </title>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body style="background-color:rgb(255, 158, 46);">
+    <h1 class="titre"> Films connus auxquels Chuck Norris a participé </h1>
+    
+    <h2 class="center">
+        <br>La Fureur du dragon<br>
+        <img src="../IMG/dragon.jpg" data-info="Sorti en 1972. Chuck Norris affronte Bruce Lee dans un combat légendaire au Colisée.">
+        
+        <br>Invasion USA<br>
+        <img src="../IMG/usa.jpg" height="500" data-info="Sorti en 1985. Chuck Norris repousse seul une invasion terroriste sur le sol américain.">
+        
+        <br>Delta Force<br>
+        <img src="../IMG/delta.jpg" height="500" data-info="Sorti en 1986. Une unité d'élite intervient lors d'un détournement d'avion à Beyrouth.">
+        
+        <br>Sale temps pour un flic<br>
+        <img src="../IMG/souffrance.webp" height="500" data-info="Sorti en 1985. Un flic de Chicago se retrouve seul contre la mafia et des policiers corrompus.">
+    </h2>
+
+    <div id="infobulle" style="display:none; position:absolute; background:rgba(0,0,0,0.8); color:white; padding:10px; border-radius:5px; pointer-events:none; max-width: 300px;"></div>
+
+	<script src="../JS/filmScript.js"></script>
+</body>
 </html>
